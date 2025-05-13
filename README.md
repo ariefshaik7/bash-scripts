@@ -12,6 +12,16 @@ A set of useful Bash scripts for automating common tasks.
 
 - `sys-health-check.sh` – Performs system health monitoring: shows memory and disk usage, installs/launches htop for real-time monitoring, and displays load averages.
 
+- `backup.sh` – Creates a timestamped compressed backup of a given directory, stores it in `~/backups`, and logs the outcome in a log file.
+    - Backups will be saved in:
+    ```bash
+    ~/backups/backup_YYYY-MM-DD_HH-MM-SS.tar.gz
+    ```
+    - Logs are stored in::
+    ```bash
+    ~/backups/backup.log
+    ```
+
 ##  Usage
 
 1. Clone the repository:
