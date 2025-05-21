@@ -21,6 +21,10 @@ A set of useful Bash scripts for automating common tasks.
     ```bash
     ~/backups/backup.log
     ```
+- `azure-resource-report.sh` – Reports Azure resource usage including account details, virtual machines, storage accounts, function apps, and AD users using Azure CLI.
+    - Make sure Azure CLI installed ([installation guide](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli))
+    - Must be logged in to Azure using `az login`
+
 
 ##  Usage
 
