@@ -18,8 +18,9 @@ A collection of Bash scripts to automate common system and cloud tasks.
     ~/backups/backup.log
     ```
 - `azure-resource-report.sh` – Lists Azure resources by type using Azure CLI.
-  - Supported services: `vm`, `storage`, `function`, `disk`, `db`, `cosmosdb`, `lb`, `appgw`, `cdn`, `frontdoor`, `monitor`, `eventgrid`, `queue`, `servicebus`, `dns`, `network`, `ad`
-  - Requires Azure CLI and login via `az login`.
+  Supported services: `vm`, `storage`, `db`, `cosmos`, `function`, `disk`, `lb`, `cdn`, `monitor`, `event`, `queue`, `dns`, `network`, `ad`, `rg`
+  - Requires Azure CLI and active login (`az login`). Make sure your account has sufficient permissions to list the resources.
+
 
 ## Usage
 

@@ -20,6 +20,7 @@
 # - DNS Zones (dns)
 # - Virtual Networks (network)
 # - Azure Active Directory Users (ad)
+# - Azure Resource Groups (rg)
 #
 # Usage: ./azure_resource_list.sh <service_name>
 # Example: ./azure_resource_list.sh vm
@@ -102,6 +103,9 @@ case "$SERVICE" in
         ;;
     ad)
         az ad user list --output table
+        ;;
+    rg)
+        az group list --output table
         ;;
     *)
         echo "Unsupported service: $SERVICE"
