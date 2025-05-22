@@ -1,8 +1,23 @@
 #!/bin/bash
 
-#####################################
-# System Health check and Monitoring
-#####################################
+
+#########################################################################
+# Simple script to perform system health checks.
+#
+# Author: Arief
+# Version: v0.0.1
+# License: MIT
+#
+# Usage:
+#   ./system_health.sh
+#
+# Description:
+#   Displays system memory usage, disk usage, system load, and launches
+#   a real-time system monitor (htop). This is useful for quick diagnostics.
+#
+# Notes:
+#   - Requires 'htop' to be installed.
+#########################################################################
 
 
 #debug mode
@@ -26,15 +41,18 @@ echo " Disk Usage: "
 df -h
 print_divider
 
-# real-time monitoring of system resources
-echo " Real time Monitoring: "
-sudo apt install htop
-htop
-print_divider
-
 # System Load
 echo "System Load Averages:"
 uptime
+
+# Check for htop
+if ! command -v htop &> /dev/null; then
+    echo "Note: 'htop' is not installed.Install htop to use the real-time monitor."
+    exit 1
+else
+    echo "Launching real-time monitoring tool (htop)..."
+    htop
+fi 
 
 
 

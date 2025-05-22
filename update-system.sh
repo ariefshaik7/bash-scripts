@@ -1,10 +1,28 @@
 #!/bin/bash
 
-###############################################################
-#simple bash script to update package list and upgrade packages
-# Automatically detectss the Linux distribution and runs
-# the appropriate package manager commands.
-###############################################################
+###############################################################################
+# Updates package lists and upgrades installed packages.
+#
+# Author: Arief
+# Version: v0.0.1
+#
+# Usage:
+#   ./system_update.sh
+#
+# Description:
+#   Detects the Linux distribution and automatically uses the correct package
+#   manager to update and upgrade all system packages.
+#
+# Supported Distributions:
+#   - Ubuntu / Debian (APT)
+#   - Fedora / RHEL / CentOS (DNF)
+#   - Arch / Manjaro (Pacman)
+#   - openSUSE / SLE (Zypper)
+#   - Alpine (APK)
+#
+# Requirements:
+#   - Script must be run with sudo or privileges to install updates.
+###############################################################################
 
 
 # Debug mode

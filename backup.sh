@@ -1,9 +1,19 @@
 #!/bin/bash
 
 
-############################
-# simple backup script
-############################
+#####################################################################
+# Simple backup script for compressing a source directory.
+#
+# Author: Arief
+# Version: v0.0.1
+#
+# Usage: ./backup.sh </path/to/source_dir>
+# Example: ./backup.sh /home/desktop/images
+#
+# Description:
+#   Creates a timestamped .tar.gz archive of the given directory
+#   and stores it in ~/backups with log entry for success or failure.
+######################################################################
 
 
 SOURCE_DIR="$1"

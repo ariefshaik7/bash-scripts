@@ -1,9 +1,23 @@
 #!/bin/bash
 
-#######################################
-# Cleaning unnecessary files and cache
-# Remove unused packages (dependencies) 
-#######################################
+###########################################################################
+# Cleans unnecessary files and package cache.
+#
+# Author: Arief
+# Version: v0.0.1
+#
+# Usage:
+#   ./system_cleanup.sh
+#
+# Description:
+#   Detects the Linux distribution and runs appropriate commands to:
+#   - Remove unused dependencies
+#   - Clear local package cache
+#   Supports: Ubuntu, Debian, Fedora, RHEL, CentOS, Arch, Manjaro, openSUSE, Alpine.
+#
+# Notes:
+#   - Requires sudo privileges.
+###########################################################################
 
 
 # Debug mode
@@ -19,7 +33,7 @@ PRETTY_NAME=$(grep '^PRETTY_NAME=' /etc/os-release | cut -d= -f2 | tr -d '"')
 case "$OS_NAME" in
         ubuntu|debian)
 		# Debian based systems
-                sudo apt autoremove   
+                sudo apt autoremove -y 
 		sudo apt clean        
 		sudo apt autoclean   
                 ;;

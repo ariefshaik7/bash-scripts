@@ -1,5 +1,22 @@
 #!/bin/bash
 
+#############################################################################
+# Collects and displays key system information.
+#
+# Author: Arief
+# Version: v0.0.1
+#
+# Usage:
+#   ./system_info.sh
+#
+# Description:
+#   Displays hostname, OS type, kernel version, uptime, users, memory,
+#   CPU info, network interfaces, and disk usage.
+#
+# Notes:
+#   - Requires standard Linux utilities: lscpu, free, ip, df, etc.
+#############################################################################
+
 
 # Debug Mode
 #set -x
@@ -9,7 +26,6 @@ set -euo pipefail
 print_divider() {
 	echo "-------------------------------------------------------------------"
 }
-
 
 
 echo "================================System Info================================"
