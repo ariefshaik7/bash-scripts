@@ -59,6 +59,12 @@ A collection of Bash scripts to automate common system and cloud tasks.
 
 ---
 
+
+## 🤝 Contributions
+
+Feel free to fork this repo, open issues, and submit pull requests to improve and expand the setup!
+
+
 ## 📄 License
 
 This project is licensed under the [MIT License](./LICENSE).
